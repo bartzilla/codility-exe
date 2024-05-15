@@ -11,14 +11,8 @@ public class FrogJmp {
      *
      *  Complexity: O(N)
      */
-    private static int jump2(int start, int end, int jump) {
-
-        double result = ((double)end - (double)start) / (double) jump;
-
-        if(result % 2 == 0)
-            return (int) Math.floor(result);
-
-        return (int) Math.ceil(result);
+    private static int jump2(int X, int Y, int D) {
+        return (int) Math.ceil(((double)Y - (double)X) / (double) D);
     }
 
     private static int jump(int start, int end, int jump) {
